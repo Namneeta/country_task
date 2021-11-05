@@ -13,15 +13,15 @@ export default function Individual(props) {
     population,
     borders,
   } = json.state.value;
-  console.log(currencies, languages, borders);
-  var text = "";
-  var border = "";
-  borders.forEach((item) => {
-    border += item + " ";
-  });
-  languages.forEach((item) => {
-    text += item.name + " ";
-  });
+//  console.log(currencies, languages, borders);
+//   var text = "";
+//   var border = "";
+//   borders.forEach((item) => {
+//     border += item + " ";
+//   });
+//   languages.forEach((item) => {
+//     text += item.name + " ";
+//   });
   return (
     <>
       <div className="container">
@@ -35,9 +35,7 @@ export default function Individual(props) {
               Currencies: {currencies[0].name} ({currencies[0].symbol})
             </h3>
             <h3>Region: {region}</h3>
-            <h3>Language: {text}</h3>
             <h3>Population: {population}</h3>
-            <h3>Borders: {border}</h3>
           </div>
         </div>
       </div>
